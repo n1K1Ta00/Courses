@@ -24,10 +24,13 @@ struct ContentView: View {
                     case .communication:
                         CommunicationView()
                     }
+                    
                     Spacer()
+                    
                 }
                 VStack {
                     Spacer()
+                    
                     TabBar(viewRouter: viewRouter, proxy: proxy)
                 }
                 .edgesIgnoringSafeArea(.bottom)

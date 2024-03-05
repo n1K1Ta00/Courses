@@ -23,7 +23,7 @@ struct TabBar: View {
             TabBarIcon(viewRouter: viewRouter, assignetPage: .achivments, width: proxy.size.width/5, height: proxy.size.height/28, iconName: "achivments")
             TabBarIcon(viewRouter: viewRouter, assignetPage: .communication, width: proxy.size.width/5, height: proxy.size.height/28, iconName: "communication")
         }
-        .frame(width: proxy.size.width, height: proxy.size.height/8)
+        .frame(width: proxy.size.width - 2, height: proxy.size.height / 8)
         .background(TabBarCustomShape())
         .shadow(color: .black.opacity(0.1), radius: 5, y: 0)
     }

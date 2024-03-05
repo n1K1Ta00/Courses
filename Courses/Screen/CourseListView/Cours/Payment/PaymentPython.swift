@@ -7,19 +7,24 @@
 
 import SwiftUI
 
-struct PaymentView: View {
+struct PaymentPython: View {
     @State private var cardNumber = ""
     @State private var cardName = ""
     @State private var expiryDate = ""
     @State private var cvv = ""
-
+    
+    @State private var showingAlert = false
+    
+    @ObservedObject var titleModel = TittleModel()
+    @ObservedObject var paymentModel = PaymentModel()
+    
     var isFormValid: Bool {
         return !cardNumber.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty &&
-               !cardName.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty &&
-               !expiryDate.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty &&
-               !cvv.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
+        !cardName.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty &&
+        !expiryDate.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty &&
+        !cvv.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty && (cardNumber.count == 16) && (expiryDate.count == 5) && (cvv.count == 3)
     }
-
+    
     var body: some View {
         VStack {
             TextField("Card Number", text: $cardNumber)
@@ -41,10 +46,12 @@ struct PaymentView: View {
                     .textFieldStyle(RoundedBorderTextFieldStyle())
             }
             
+            Text("К оплате: 500 BYN")
+            
             Button(action: {
-             
+                showingAlert = true
             }) {
-                Text("Pay Now")
+                Text("Оплатить")
                     .padding()
                     .foregroundColor(.white)
                     .background(isFormValid ? Color.blue : Color.gray)
@@ -54,11 +61,12 @@ struct PaymentView: View {
             .disabled(!isFormValid)
         }
         .padding()
+        .alert("Оплата курса прошла успешно", isPresented: $showingAlert) {}
     }
 }
 
-struct PaymentView_Previews: PreviewProvider {
+struct PaymentPython_Previews: PreviewProvider {
     static var previews: some View {
-        PaymentView()
+        PaymentPython()
     }
 }

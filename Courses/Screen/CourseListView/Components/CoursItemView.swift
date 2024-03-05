@@ -14,39 +14,39 @@ struct CoursItemView: View {
     let footerText: String
     
     var body: some View {
-            VStack(alignment: .leading) {
-                ImageLoaderView(url: imageURL)
-                    .frame(width: screen.width * 1.06, height: screen.height)
-                    .background(
+        VStack(alignment: .leading) {
+            ImageLoaderView(url: imageURL)
+                .frame(width: screen.width * 1.06, height: screen.height)
+                .background(
                     Color.gray.opacity(0.3)
-                    )
-                    .overlay(
+                )
+                .overlay(
                     overlayCard
                     , alignment: .top
-                    )
-                    .clipShape(RoundedRectangle(cornerRadius: 24))
-                
-                Text(title)
-                    .font(.system(size: 20).bold())
-                    .multilineTextAlignment(.leading)
-                    .lineLimit(2)
-                    .frame(width: screen.width, height: 20 * 2, alignment: .leading)
-                    .background(.clear)
-                    .cornerRadius(10)
-
-                footer
-            }
+                )
+                .clipShape(RoundedRectangle(cornerRadius: 24))
+            
+            Text(title)
+                .font(.system(size: 20).bold())
+                .multilineTextAlignment(.leading)
+                .lineLimit(2)
+                .frame(width: screen.width, height: 20 * 2, alignment: .leading)
+                .background(.clear)
+                .cornerRadius(10)
+            
+            footer
         }
-
+    }
+    
     var overlayCard: some View {
         HStack {
-                HStack(spacing: 0) {
-                    Text(amount, format: .currency(code: "BYN"))
-                        .foregroundColor(Color.Text.white)
-                }
-                .padding(.all, 2)
-                .padding(.horizontal, 4)
-                .background(Color.gray.cornerRadius(8))
+            HStack(spacing: 0) {
+                Text(amount, format: .currency(code: "BYN"))
+                    .foregroundColor(Color.Text.white)
+            }
+            .padding(.all, 2)
+            .padding(.horizontal, 4)
+            .background(Color.gray.cornerRadius(8))
             Spacer()
         }
         .padding()
@@ -64,12 +64,12 @@ struct CoursItemView: View {
     }
 }
 
- var screen: CGSize {
-       return CGSize(
-                width: UIScreen.main.bounds.width - 32,
-                height: 200
-            )
-        }
+var screen: CGSize {
+    return CGSize(
+        width: UIScreen.main.bounds.width - 32,
+        height: 200
+    )
+}
 
 struct CoursItemView_Previews: PreviewProvider {
     static var previews: some View {

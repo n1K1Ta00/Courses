@@ -29,7 +29,13 @@
 		2D215D892B96503B00A0EBF1 /* KotlinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D215D882B96503B00A0EBF1 /* KotlinView.swift */; };
 		2D215D8B2B96505B00A0EBF1 /* JavaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D215D8A2B96505B00A0EBF1 /* JavaView.swift */; };
 		2D215D8D2B96507200A0EBF1 /* CSharpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D215D8C2B96507200A0EBF1 /* CSharpView.swift */; };
-		2D215D8F2B96637700A0EBF1 /* PaymentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D215D8E2B96637700A0EBF1 /* PaymentView.swift */; };
+		2D215D8F2B96637700A0EBF1 /* PaymentPython.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D215D8E2B96637700A0EBF1 /* PaymentPython.swift */; };
+		2D215D972B97324900A0EBF1 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D215D962B97324900A0EBF1 /* Model.swift */; };
+		2D215D9A2B9737AA00A0EBF1 /* CSharpCourse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D215D992B9737AA00A0EBF1 /* CSharpCourse.swift */; };
+		2D215D9C2B974C0800A0EBF1 /* JavaCourse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D215D9B2B974C0700A0EBF1 /* JavaCourse.swift */; };
+		2D215D9E2B97579600A0EBF1 /* KotlinCourse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D215D9D2B97579600A0EBF1 /* KotlinCourse.swift */; };
+		2D215DA02B9757B200A0EBF1 /* SwiftCourse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D215D9F2B9757B200A0EBF1 /* SwiftCourse.swift */; };
+		2D215DA22B9757C800A0EBF1 /* PythonCourse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D215DA12B9757C800A0EBF1 /* PythonCourse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,7 +62,13 @@
 		2D215D882B96503B00A0EBF1 /* KotlinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KotlinView.swift; sourceTree = "<group>"; };
 		2D215D8A2B96505B00A0EBF1 /* JavaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JavaView.swift; sourceTree = "<group>"; };
 		2D215D8C2B96507200A0EBF1 /* CSharpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSharpView.swift; sourceTree = "<group>"; };
-		2D215D8E2B96637700A0EBF1 /* PaymentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentView.swift; sourceTree = "<group>"; };
+		2D215D8E2B96637700A0EBF1 /* PaymentPython.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentPython.swift; sourceTree = "<group>"; };
+		2D215D962B97324900A0EBF1 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		2D215D992B9737AA00A0EBF1 /* CSharpCourse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSharpCourse.swift; sourceTree = "<group>"; };
+		2D215D9B2B974C0700A0EBF1 /* JavaCourse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JavaCourse.swift; sourceTree = "<group>"; };
+		2D215D9D2B97579600A0EBF1 /* KotlinCourse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KotlinCourse.swift; sourceTree = "<group>"; };
+		2D215D9F2B9757B200A0EBF1 /* SwiftCourse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftCourse.swift; sourceTree = "<group>"; };
+		2D215DA12B9757C800A0EBF1 /* PythonCourse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PythonCourse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +101,7 @@
 		2D215D492B95D12C00A0EBF1 /* Courses */ = {
 			isa = PBXGroup;
 			children = (
+				2D215D982B9732F600A0EBF1 /* Model */,
 				2D215D752B95E7B800A0EBF1 /* Services */,
 				2D215D4A2B95D12C00A0EBF1 /* CoursesApp.swift */,
 				2D215D612B95D5D000A0EBF1 /* Extensions */,
@@ -145,7 +158,6 @@
 			isa = PBXGroup;
 			children = (
 				2D215D4C2B95D12C00A0EBF1 /* ContentView.swift */,
-				2D215D7F2B960FC800A0EBF1 /* Cours */,
 				2D215D692B95D8E300A0EBF1 /* CourseListView */,
 				2D215D722B95DAAE00A0EBF1 /* TestView */,
 				2D215D6F2B95DA4800A0EBF1 /* AchievementsView */,
@@ -160,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				2D215D6A2B95D90400A0EBF1 /* CourseListView.swift */,
+				2D215D7F2B960FC800A0EBF1 /* Cours */,
 				2D215D7A2B96095E00A0EBF1 /* Components */,
 			);
 			path = CourseListView;
@@ -210,12 +223,12 @@
 		2D215D7F2B960FC800A0EBF1 /* Cours */ = {
 			isa = PBXGroup;
 			children = (
+				2D215D952B972AF100A0EBF1 /* CSharp */,
+				2D215D942B972AE700A0EBF1 /* Java */,
+				2D215D932B972ADE00A0EBF1 /* Kotlin */,
+				2D215D922B972AD600A0EBF1 /* Swift */,
+				2D215D912B972ABA00A0EBF1 /* Python */,
 				2D215D902B96638700A0EBF1 /* Payment */,
-				2D215D842B96500800A0EBF1 /* PythonView.swift */,
-				2D215D862B96502700A0EBF1 /* SwiftView.swift */,
-				2D215D882B96503B00A0EBF1 /* KotlinView.swift */,
-				2D215D8A2B96505B00A0EBF1 /* JavaView.swift */,
-				2D215D8C2B96507200A0EBF1 /* CSharpView.swift */,
 			);
 			path = Cours;
 			sourceTree = "<group>";
@@ -223,9 +236,62 @@
 		2D215D902B96638700A0EBF1 /* Payment */ = {
 			isa = PBXGroup;
 			children = (
-				2D215D8E2B96637700A0EBF1 /* PaymentView.swift */,
+				2D215D8E2B96637700A0EBF1 /* PaymentPython.swift */,
 			);
 			path = Payment;
+			sourceTree = "<group>";
+		};
+		2D215D912B972ABA00A0EBF1 /* Python */ = {
+			isa = PBXGroup;
+			children = (
+				2D215D842B96500800A0EBF1 /* PythonView.swift */,
+				2D215DA12B9757C800A0EBF1 /* PythonCourse.swift */,
+			);
+			path = Python;
+			sourceTree = "<group>";
+		};
+		2D215D922B972AD600A0EBF1 /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				2D215D862B96502700A0EBF1 /* SwiftView.swift */,
+				2D215D9F2B9757B200A0EBF1 /* SwiftCourse.swift */,
+			);
+			path = Swift;
+			sourceTree = "<group>";
+		};
+		2D215D932B972ADE00A0EBF1 /* Kotlin */ = {
+			isa = PBXGroup;
+			children = (
+				2D215D882B96503B00A0EBF1 /* KotlinView.swift */,
+				2D215D9D2B97579600A0EBF1 /* KotlinCourse.swift */,
+			);
+			path = Kotlin;
+			sourceTree = "<group>";
+		};
+		2D215D942B972AE700A0EBF1 /* Java */ = {
+			isa = PBXGroup;
+			children = (
+				2D215D8A2B96505B00A0EBF1 /* JavaView.swift */,
+				2D215D9B2B974C0700A0EBF1 /* JavaCourse.swift */,
+			);
+			path = Java;
+			sourceTree = "<group>";
+		};
+		2D215D952B972AF100A0EBF1 /* CSharp */ = {
+			isa = PBXGroup;
+			children = (
+				2D215D8C2B96507200A0EBF1 /* CSharpView.swift */,
+				2D215D992B9737AA00A0EBF1 /* CSharpCourse.swift */,
+			);
+			path = CSharp;
+			sourceTree = "<group>";
+		};
+		2D215D982B9732F600A0EBF1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2D215D962B97324900A0EBF1 /* Model.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -304,19 +370,25 @@
 				2D215D892B96503B00A0EBF1 /* KotlinView.swift in Sources */,
 				2D215D6E2B95D9B200A0EBF1 /* CommunicationView.swift in Sources */,
 				2D215D602B95D58500A0EBF1 /* TabBarIcon.swift in Sources */,
+				2D215DA02B9757B200A0EBF1 /* SwiftCourse.swift in Sources */,
+				2D215D9C2B974C0800A0EBF1 /* JavaCourse.swift in Sources */,
 				2D215D672B95D72000A0EBF1 /* TabBarCustomShape.swift in Sources */,
 				2D215D8B2B96505B00A0EBF1 /* JavaView.swift in Sources */,
 				2D215D4B2B95D12C00A0EBF1 /* CoursesApp.swift in Sources */,
 				2D215D7E2B960E6500A0EBF1 /* CoursItemView.swift in Sources */,
-				2D215D8F2B96637700A0EBF1 /* PaymentView.swift in Sources */,
+				2D215DA22B9757C800A0EBF1 /* PythonCourse.swift in Sources */,
+				2D215D8F2B96637700A0EBF1 /* PaymentPython.swift in Sources */,
 				2D215D852B96500800A0EBF1 /* PythonView.swift in Sources */,
+				2D215D9E2B97579600A0EBF1 /* KotlinCourse.swift in Sources */,
 				2D215D592B95D3C700A0EBF1 /* TabBar.swift in Sources */,
 				2D215D8D2B96507200A0EBF1 /* CSharpView.swift in Sources */,
 				2D215D632B95D62A00A0EBF1 /* Color  + ext.swift in Sources */,
 				2D215D6B2B95D90400A0EBF1 /* CourseListView.swift in Sources */,
+				2D215D9A2B9737AA00A0EBF1 /* CSharpCourse.swift in Sources */,
 				2D215D7C2B960A0200A0EBF1 /* SearchBarView.swift in Sources */,
 				2D215D712B95DA6600A0EBF1 /* AchievementsView.swift in Sources */,
 				2D215D5D2B95D4D800A0EBF1 /* ViewRouter.swift in Sources */,
+				2D215D972B97324900A0EBF1 /* Model.swift in Sources */,
 				2D215D872B96502700A0EBF1 /* SwiftView.swift in Sources */,
 				2D215D772B95E7ED00A0EBF1 /* VideoPlayerView.swift in Sources */,
 			);
