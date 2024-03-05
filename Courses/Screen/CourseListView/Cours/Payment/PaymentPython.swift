@@ -15,8 +15,8 @@ struct PaymentPython: View {
     
     @State private var showingAlert = false
     
-    @ObservedObject var titleModel = TittleModel()
-    @ObservedObject var paymentModel = PaymentModel()
+    @ObservedObject var title = TittleModel()
+    @ObservedObject var payment = PaymentModel()
     
     var isFormValid: Bool {
         return !cardNumber.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty &&
@@ -24,6 +24,8 @@ struct PaymentPython: View {
         !expiryDate.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty &&
         !cvv.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty && (cardNumber.count == 16) && (expiryDate.count == 5) && (cvv.count == 3)
     }
+    
+    
     
     var body: some View {
         VStack {
@@ -36,14 +38,17 @@ struct PaymentPython: View {
                 .padding()
                 .textFieldStyle(RoundedBorderTextFieldStyle())
             
+            
             HStack {
                 TextField("MM/YY", text: $expiryDate)
                     .padding()
                     .textFieldStyle(RoundedBorderTextFieldStyle())
+                    .keyboardType(.numberPad)
                 
                 TextField("CVV", text: $cvv)
                     .padding()
                     .textFieldStyle(RoundedBorderTextFieldStyle())
+                    .keyboardType(.numberPad)
             }
             
             Text("К оплате: 500 BYN")
@@ -61,7 +66,9 @@ struct PaymentPython: View {
             .disabled(!isFormValid)
         }
         .padding()
-        .alert("Оплата курса прошла успешно", isPresented: $showingAlert) {}
+        .alert("Оплата курса прошла успешно", isPresented: $showingAlert) {
+            
+        }
     }
 }
 

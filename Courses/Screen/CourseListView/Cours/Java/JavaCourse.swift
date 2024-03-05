@@ -60,6 +60,10 @@ struct JavaCourse: View {
                                             .frame(width: 380, height: 380)
                                     }
                                     
+                                    Text("Урок №1:Установка Java JDK и IntelliJ IDEA")
+                                        .font(.headline)
+                                        .foregroundStyle(Color.black)
+                                    
                                     Spacer()
                                     
                                 }
@@ -85,6 +89,10 @@ struct JavaCourse: View {
                                         WebView(videoID: self.youTubeVideoID2)
                                             .frame(width: 380, height: 380)
                                     }
+                                    
+                                    Text("Урок №2:Базовые концепции языка")
+                                        .font(.headline)
+                                        .foregroundStyle(Color.black)
                                     
                                     Spacer()
                                     
@@ -112,6 +120,10 @@ struct JavaCourse: View {
                                             .frame(width: 380, height: 380)
                                     }
                                     
+                                    Text("Урок №3:Переменные в Джава. Типы данных")
+                                        .font(.headline)
+                                        .foregroundStyle(Color.black)
+                                    
                                     Spacer()
                                     
                                 }
@@ -138,6 +150,10 @@ struct JavaCourse: View {
                                             .frame(width: 380, height: 380)
                                     }
                                     
+                                    Text("Урок №4:Математические действия")
+                                        .font(.headline)
+                                        .foregroundStyle(Color.black)
+                                    
                                     Spacer()
                                     
                                 }
@@ -163,6 +179,10 @@ struct JavaCourse: View {
                                         WebView(videoID: self.youTubeVideoID5)
                                             .frame(width: 380, height: 380)
                                     }
+                                    
+                                    Text("Урок №5:Условные конструкции")
+                                        .font(.headline)
+                                        .foregroundStyle(Color.black)
                                     
                                     Spacer()
                                     

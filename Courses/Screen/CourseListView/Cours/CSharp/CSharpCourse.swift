@@ -59,6 +59,10 @@ struct CSharpCourse: View {
                                             .frame(width: 380, height: 380)
                                     }
                                     
+                                    Text("Урок №1:Первая программа")
+                                        .font(.title)
+                                        .foregroundStyle(Color.black)
+                                    
                                     Spacer()
                                     
                                 }
@@ -84,6 +88,10 @@ struct CSharpCourse: View {
                                         WebView(videoID: self.youTubeVideoID2)
                                             .frame(width: 380, height: 380)
                                     }
+                                    
+                                    Text("Урок №2:Структура проекта")
+                                        .font(.title)
+                                        .foregroundStyle(Color.black)
                                     
                                     Spacer()
                                     
@@ -111,6 +119,10 @@ struct CSharpCourse: View {
                                             .frame(width: 380, height: 380)
                                     }
                                     
+                                    Text("Урок №3:Типы данных в С#")
+                                        .font(.title)
+                                        .foregroundStyle(Color.black)
+                                    
                                     Spacer()
                                     
                                 }
@@ -137,6 +149,10 @@ struct CSharpCourse: View {
                                             .frame(width: 380, height: 380)
                                     }
                                     
+                                    Text("Урок №4:Что такое переменная в С#")
+                                        .font(.headline)
+                                        .foregroundStyle(Color.black)
+                                    
                                     Spacer()
                                     
                                 }
@@ -162,6 +178,10 @@ struct CSharpCourse: View {
                                         WebView(videoID: self.youTubeVideoID5)
                                             .frame(width: 380, height: 380)
                                     }
+                                    
+                                    Text("Урок №5:Ввод данных в консоль в С#")
+                                        .font(.headline)
+                                        .foregroundStyle(Color.black)
                                     
                                     Spacer()
                                     

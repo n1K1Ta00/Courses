@@ -27,6 +27,8 @@ struct CourseListView: View {
     }
     
     @State private var selectedCourseType: CourseType?
+    @ObservedObject var payment = PaymentModel()
+    @ObservedObject var title = TittleModel()
     
     var body: some View {
         NavigationView {
@@ -50,14 +52,34 @@ struct CourseListView: View {
     func getViewForCourse(_ courseType: CourseType) -> some View {
         switch courseType {
         case .python:
+            if payment.python == true {
+                return AnyView(PythonCourse())
+            }
+            title.python = true
             return AnyView(PythonView())
         case .swift:
+            if payment.swift == true {
+                return AnyView(SwiftCourse())
+            }
+            title.swift = true
             return AnyView(SwiftView())
         case .kotlin:
+            if payment.kotlin == true {
+                return AnyView(KotlinCourse())
+            }
+            title.kotlin = true
             return AnyView(KotlinView())
         case .java:
+            if payment.java {
+                return AnyView(JavaCourse())
+            }
+            title.java = true
             return AnyView(JavaView())
         case .cSharp:
+            if payment.csharp == true {
+                return AnyView(CSharpCourse())
+            }
+            title.csharp = true
             return AnyView(CSharpView())
         }
     }

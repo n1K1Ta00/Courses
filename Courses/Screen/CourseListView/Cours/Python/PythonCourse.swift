@@ -8,31 +8,31 @@
 import SwiftUI
 
 struct PythonCourse: View {
-    @State private var youTubeURL1: String = "https://youtu.be/l77oxzJUhMQ?list=PLQOaTSbfxUtD6kMmAYc8Fooqya3pjLs1N"
+    @State private var youTubeURL1: String = "https://youtu.be/CfqX2_xY8VQ?list=PLDyJYA6aTY1lPWXBPk0gw6gR8fEtPDGKa"
     @State private var youTubeVideoID1: String = ""
     @State private var validYouTubeURL1 = false
     @State private var showingPayment1 = false
     
     
-    @State private var youTubeURL2: String = "https://youtu.be/JTn3m-8eMx4?list=PLQOaTSbfxUtD6kMmAYc8Fooqya3pjLs1N"
+    @State private var youTubeURL2: String = "https://youtu.be/ML5tP8m6SHw?list=PLDyJYA6aTY1lPWXBPk0gw6gR8fEtPDGKa"
     @State private var youTubeVideoID2: String = ""
     @State private var validYouTubeURL2 = false
     @State private var showingPayment2 = false
     
     
-    @State private var youTubeURL3: String = "https://youtu.be/fNjVCSEXpDM?list=PLQOaTSbfxUtD6kMmAYc8Fooqya3pjLs1N"
+    @State private var youTubeURL3: String = "https://youtu.be/DZvNZ9l9NT4?list=PLDyJYA6aTY1lPWXBPk0gw6gR8fEtPDGKa"
     @State private var youTubeVideoID3: String = ""
     @State private var validYouTubeURL3 = false
     @State private var showingPayment3 = false
     
     
-    @State private var youTubeURL4: String = "https://youtu.be/JD3Ois6i298?list=PLQOaTSbfxUtD6kMmAYc8Fooqya3pjLs1N"
+    @State private var youTubeURL4: String = "https://youtu.be/SUDNfS_0X-Q?list=PLDyJYA6aTY1lPWXBPk0gw6gR8fEtPDGKa"
     @State private var youTubeVideoID4: String = ""
     @State private var validYouTubeURL4 = false
     @State private var showingPayment4 = false
     
     
-    @State private var youTubeURL5: String = "https://youtu.be/Wp8hDQs3J4o?list=PLQOaTSbfxUtD6kMmAYc8Fooqya3pjLs1N"
+    @State private var youTubeURL5: String = "https://youtu.be/vMD6-jzgDvI?list=PLDyJYA6aTY1lPWXBPk0gw6gR8fEtPDGKa"
     @State private var youTubeVideoID5: String = ""
     @State private var validYouTubeURL5 = false
     @State private var showingPayment5 = false
@@ -51,13 +51,17 @@ struct PythonCourse: View {
                         .font(.title)
                     
                     HStack {
-                        NavigationLink("Урок №1:Первая программа") {
+                        NavigationLink("Урок №1:Установка среды разработки") {
                             ScrollView {
                                 VStack {
                                     if validYouTubeURL1 {
                                         WebView(videoID: self.youTubeVideoID1)
                                             .frame(width: 380, height: 380)
                                     }
+                                    
+                                    Text("Урок №1:Установка среды разработки")
+                                        .font(.headline)
+                                        .foregroundStyle(Color.black)
                                     
                                     Spacer()
                                     
@@ -77,13 +81,17 @@ struct PythonCourse: View {
                         
                     }
                     HStack {
-                        NavigationLink("Урок №2:Структура проекта") {
+                        NavigationLink("Урок №2:Базовые операции в языке Python") {
                             ScrollView {
                                 VStack {
                                     if validYouTubeURL2 {
                                         WebView(videoID: self.youTubeVideoID2)
                                             .frame(width: 380, height: 380)
                                     }
+                                    
+                                    Text("Урок №2:Базовые операции в языке Python")
+                                        .font(.headline)
+                                        .foregroundStyle(Color.black)
                                     
                                     Spacer()
                                     
@@ -103,13 +111,17 @@ struct PythonCourse: View {
                         
                     }
                     HStack {
-                        NavigationLink("Урок №3:Типы данных в С#") {
+                        NavigationLink("Урок №3:Переменные и типы данных") {
                             ScrollView {
                                 VStack {
                                     if validYouTubeURL3 {
                                         WebView(videoID: self.youTubeVideoID3)
                                             .frame(width: 380, height: 380)
                                     }
+                                    
+                                    Text("Урок №3:Переменные и типы данных")
+                                        .font(.headline)
+                                        .foregroundStyle(Color.black)
                                     
                                     Spacer()
                                     
@@ -129,13 +141,17 @@ struct PythonCourse: View {
                         
                     }
                     HStack {
-                        NavigationLink("Урок №4:Что такое переменная в С#") {
+                        NavigationLink("Урок №4:Условные операторы") {
                             ScrollView {
                                 VStack {
                                     if validYouTubeURL4 {
                                         WebView(videoID: self.youTubeVideoID4)
                                             .frame(width: 380, height: 380)
                                     }
+                                    
+                                    Text("Урок №4:Условные операторы")
+                                        .font(.title)
+                                        .foregroundStyle(Color.black)
                                     
                                     Spacer()
                                     
@@ -155,13 +171,17 @@ struct PythonCourse: View {
                         
                     }
                     HStack {
-                        NavigationLink("Урок №5:Ввод данных в консоль в С#") {
+                        NavigationLink("Урок №5:Циклы и операторы в них (for, while)") {
                             ScrollView {
                                 VStack {
                                     if validYouTubeURL5 {
                                         WebView(videoID: self.youTubeVideoID5)
                                             .frame(width: 380, height: 380)
                                     }
+                                    
+                                    Text("Урок №5:Циклы и операторы в них (for, while)")
+                                        .font(.headline)
+                                        .foregroundStyle(Color.black)
                                     
                                     Spacer()
                                     
