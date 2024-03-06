@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct TestView: View {
+    @ObservedObject var model = Model()
+    
     var body: some View {
         NavigationStack {
             List {
@@ -17,9 +19,18 @@ struct TestView: View {
                         .scaledToFit()
                         .frame(width: 100, height: 100)
                     
+                    if model.pythonPayment == false {
+                        Text("НЕТ ДОСТУПА")
+                            .foregroundStyle(.gray)
+                    }
                     NavigationLink("Пройти тест по первым 5 урокам") {
                         PythonTest()
                     }
+                    .padding()
+                    .background(Color.blue)
+                    .foregroundColor(.white)
+                    .cornerRadius(10)
+                    .disabled(!model.pythonPayment)
                     
                 }
                 
@@ -29,9 +40,18 @@ struct TestView: View {
                         .scaledToFit()
                         .frame(width: 100, height: 100)
                     
+                    if model.swiftPayment == false {
+                        Text("НЕТ ДОСТУПА")
+                            .foregroundStyle(.gray)
+                    }
                     NavigationLink("Пройти тест по первым 5 урокам") {
                        SwiftTest()
                     }
+                    .padding()
+                    .background(Color.blue)
+                    .foregroundColor(.white)
+                    .cornerRadius(10)
+                    .disabled(!model.swiftPayment)
                 }
                 
                 VStack(spacing: 20) {
@@ -40,9 +60,18 @@ struct TestView: View {
                         .scaledToFit()
                         .frame(width: 100, height: 100)
                     
+                    if model.kotlinPayment == false {
+                        Text("НЕТ ДОСТУПА")
+                            .foregroundStyle(.gray)
+                    }
                     NavigationLink("Пройти тест по первым 5 урокам") {
                         KotlinTest()
                     }
+                    .padding()
+                    .background(Color.blue)
+                    .foregroundColor(.white)
+                    .cornerRadius(10)
+                    .disabled(!model.kotlinPayment)
                 }
                 
                 VStack(spacing: 20) {
@@ -51,9 +80,18 @@ struct TestView: View {
                         .scaledToFit()
                         .frame(width: 100, height: 100)
                     
+                    if model.javaPayment == false {
+                        Text("НЕТ ДОСТУПА")
+                            .foregroundStyle(.gray)
+                    }
                     NavigationLink("Пройти тест по первым 5 урокам") {
                         JavaTest()
                     }
+                    .padding()
+                    .background(Color.blue)
+                    .foregroundColor(.white)
+                    .cornerRadius(10)
+                    .disabled(!model.javaPayment)
                 }
                 
                 VStack(spacing: 20) {
@@ -62,9 +100,18 @@ struct TestView: View {
                         .scaledToFit()
                         .frame(width: 100, height: 100)
                     
+                    if model.pythonPayment == false {
+                        Text("НЕТ ДОСТУПА")
+                            .foregroundStyle(.gray)
+                    }
                     NavigationLink("Пройти тест по первым 5 урокам") {
                        CSharpTest()
                     }
+                    .padding()
+                    .background(Color.blue)
+                    .foregroundColor(.white)
+                    .cornerRadius(10)
+                    .disabled(!model.csharpPayment)
                 }
             }
             .padding(.bottom, 50)

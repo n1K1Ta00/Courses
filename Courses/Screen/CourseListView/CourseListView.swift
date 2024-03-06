@@ -41,7 +41,7 @@ struct CourseListView: View {
                         search.isEmpty || $0.title.localizedCaseInsensitiveContains(search)
                     })  { course in
                         NavigationLink(
-                            destination: getViewForCourse(course.type),
+                            destination: getViewForCourse(course.type).navigationBarBackButtonHidden(true),
                             tag: course.type,
                             selection: $selectedCourseType
                         ) {

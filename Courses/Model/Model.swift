@@ -15,6 +15,7 @@ class Model: ObservableObject {
     @Published var javaPayment = false
     @Published var kotlinPayment = false
     @Published var csharpPayment = false
+
     
     //TEST
     @Published var pythonComplete = false
