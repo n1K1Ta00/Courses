@@ -15,8 +15,7 @@ struct PaymentPython: View {
     
     @State private var showingAlert = false
     
-    @ObservedObject var title = TittleModel()
-    @ObservedObject var payment = PaymentModel()
+    @ObservedObject var payment = Model()
     
     var isFormValid: Bool {
         return !cardNumber.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty &&
@@ -28,47 +27,55 @@ struct PaymentPython: View {
     
     
     var body: some View {
-        VStack {
-            TextField("Card Number", text: $cardNumber)
-                .padding()
-                .textFieldStyle(RoundedBorderTextFieldStyle())
-                .keyboardType(.numberPad)
-            
-            TextField("Cardholder Name", text: $cardName)
-                .padding()
-                .textFieldStyle(RoundedBorderTextFieldStyle())
-            
-            
-            HStack {
-                TextField("MM/YY", text: $expiryDate)
+            VStack {
+                TextField("Номер карты", text: $cardNumber)
                     .padding()
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .keyboardType(.numberPad)
                 
-                TextField("CVV", text: $cvv)
+                TextField("Имя держателя карты", text: $cardName)
                     .padding()
                     .textFieldStyle(RoundedBorderTextFieldStyle())
-                    .keyboardType(.numberPad)
-            }
-            
-            Text("К оплате: 500 BYN")
-            
-            Button(action: {
-                showingAlert = true
-            }) {
-                Text("Оплатить")
-                    .padding()
-                    .foregroundColor(.white)
-                    .background(isFormValid ? Color.blue : Color.gray)
-                    .cornerRadius(8)
+                
+                
+                HStack {
+                    TextField("MM/YY", text: $expiryDate)
+                        .padding()
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .keyboardType(.numberPad)
+                    
+                    TextField("CVV", text: $cvv)
+                        .padding()
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .keyboardType(.numberPad)
+                }
+                
+                Text("К оплате: 500 BYN")
+                
+                Button(action: {
+                    showingAlert = true
+                }) {
+                    Text("Оплатить")
+                        .padding()
+                        .foregroundColor(.white)
+                        .background(isFormValid ? Color.blue : Color.gray)
+                        .cornerRadius(8)
+                }
+                .padding()
+                .disabled(!isFormValid)
             }
             .padding()
-            .disabled(!isFormValid)
-        }
-        .padding()
-        .alert("Оплата курса прошла успешно", isPresented: $showingAlert) {
-            
-        }
+            .alert("""
+                   
+                   Оплата курса прошла успешно
+                   Перезайдите в приложение чтобы начать проходить данный курс
+                   
+                   """, isPresented: $showingAlert) {
+                Button("OK") {
+                    payment.pythonPayment = true
+                    payment.saveToUserDefaults()
+                }
+            }
     }
 }
 

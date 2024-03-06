@@ -16,7 +16,7 @@ struct SearchBarView: View {
                 .foregroundColor(
                     searchText.isEmpty ? Color.Text.black : Color.Text.gray
                 )
-            TextField("Search by name or symbol...", text: $searchText)
+            TextField("Поиск по имени...", text: $searchText)
                 .foregroundColor(Color.Text.black)
                 .autocorrectionDisabled(true)
                 .submitLabel(.done)
@@ -44,9 +44,8 @@ struct SearchBarView: View {
     }
 }
 
-struct SearchBarView_Previews: PreviewProvider {
-    static var previews: some View {
+#Preview {
         SearchBarView(searchText: .constant(""))
     }
-}
+
 

@@ -13,8 +13,6 @@ struct PythonView: View {
     @State private var validYouTubeURL = false
     @State private var showingPayment = false
     
-    @ObservedObject var dataModel = TittleModel()
-    
     var body: some View {
         NavigationStack {
             ScrollView {
@@ -56,7 +54,6 @@ struct PythonView: View {
                         
                         Button(action: {
                             showingPayment = true
-                            dataModel.python = true
                         }) {
                             Text("Приобрести курс")
                                 .foregroundColor(.white)

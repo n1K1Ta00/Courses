@@ -13,8 +13,6 @@ struct SwiftView: View {
     @State private var validYouTubeURL = false
     @State private var showingPayment = false
     
-    @ObservedObject var dataModel = TittleModel()
-    
     var body: some View {
         NavigationStack {
             ScrollView {
@@ -56,7 +54,6 @@ struct SwiftView: View {
                         
                         Button(action: {
                             showingPayment = true
-                            dataModel.swift = true
                         }) {
                             Text("Приобрести курс")
                                 .foregroundColor(.white)

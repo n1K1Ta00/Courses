@@ -36,6 +36,15 @@
 		2D215D9E2B97579600A0EBF1 /* KotlinCourse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D215D9D2B97579600A0EBF1 /* KotlinCourse.swift */; };
 		2D215DA02B9757B200A0EBF1 /* SwiftCourse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D215D9F2B9757B200A0EBF1 /* SwiftCourse.swift */; };
 		2D215DA22B9757C800A0EBF1 /* PythonCourse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D215DA12B9757C800A0EBF1 /* PythonCourse.swift */; };
+		2D9512282B97EA6D00D5F6B5 /* PaymentSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9512272B97EA6D00D5F6B5 /* PaymentSwift.swift */; };
+		2D95122A2B97EA7D00D5F6B5 /* PaymentKotlin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9512292B97EA7D00D5F6B5 /* PaymentKotlin.swift */; };
+		2D95122C2B97EA9100D5F6B5 /* PaymentJava.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D95122B2B97EA9100D5F6B5 /* PaymentJava.swift */; };
+		2D95122E2B97EAAF00D5F6B5 /* PaymentCSharp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D95122D2B97EAAF00D5F6B5 /* PaymentCSharp.swift */; };
+		2D9512312B97FEDC00D5F6B5 /* PythonTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9512302B97FEDC00D5F6B5 /* PythonTest.swift */; };
+		2D9512332B97FF8400D5F6B5 /* SwiftTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9512322B97FF8400D5F6B5 /* SwiftTest.swift */; };
+		2D9512352B97FFA100D5F6B5 /* KotlinTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9512342B97FFA100D5F6B5 /* KotlinTest.swift */; };
+		2D9512372B97FFBF00D5F6B5 /* JavaTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9512362B97FFBE00D5F6B5 /* JavaTest.swift */; };
+		2D9512392B97FFD500D5F6B5 /* CSharpTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9512382B97FFD500D5F6B5 /* CSharpTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +78,15 @@
 		2D215D9D2B97579600A0EBF1 /* KotlinCourse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KotlinCourse.swift; sourceTree = "<group>"; };
 		2D215D9F2B9757B200A0EBF1 /* SwiftCourse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftCourse.swift; sourceTree = "<group>"; };
 		2D215DA12B9757C800A0EBF1 /* PythonCourse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PythonCourse.swift; sourceTree = "<group>"; };
+		2D9512272B97EA6D00D5F6B5 /* PaymentSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentSwift.swift; sourceTree = "<group>"; };
+		2D9512292B97EA7D00D5F6B5 /* PaymentKotlin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentKotlin.swift; sourceTree = "<group>"; };
+		2D95122B2B97EA9100D5F6B5 /* PaymentJava.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentJava.swift; sourceTree = "<group>"; };
+		2D95122D2B97EAAF00D5F6B5 /* PaymentCSharp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentCSharp.swift; sourceTree = "<group>"; };
+		2D9512302B97FEDC00D5F6B5 /* PythonTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PythonTest.swift; sourceTree = "<group>"; };
+		2D9512322B97FF8400D5F6B5 /* SwiftTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftTest.swift; sourceTree = "<group>"; };
+		2D9512342B97FFA100D5F6B5 /* KotlinTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KotlinTest.swift; sourceTree = "<group>"; };
+		2D9512362B97FFBE00D5F6B5 /* JavaTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JavaTest.swift; sourceTree = "<group>"; };
+		2D9512382B97FFD500D5F6B5 /* CSharpTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSharpTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,9 +119,9 @@
 		2D215D492B95D12C00A0EBF1 /* Courses */ = {
 			isa = PBXGroup;
 			children = (
-				2D215D982B9732F600A0EBF1 /* Model */,
-				2D215D752B95E7B800A0EBF1 /* Services */,
 				2D215D4A2B95D12C00A0EBF1 /* CoursesApp.swift */,
+				2D215D752B95E7B800A0EBF1 /* Services */,
+				2D215D982B9732F600A0EBF1 /* Model */,
 				2D215D612B95D5D000A0EBF1 /* Extensions */,
 				2D215D682B95D76300A0EBF1 /* Screen */,
 				2D215D502B95D12F00A0EBF1 /* Preview Content */,
@@ -198,6 +216,7 @@
 			isa = PBXGroup;
 			children = (
 				2D215D732B95DAC600A0EBF1 /* TestView.swift */,
+				2D95122F2B97FEC100D5F6B5 /* Test */,
 			);
 			path = TestView;
 			sourceTree = "<group>";
@@ -237,6 +256,10 @@
 			isa = PBXGroup;
 			children = (
 				2D215D8E2B96637700A0EBF1 /* PaymentPython.swift */,
+				2D9512272B97EA6D00D5F6B5 /* PaymentSwift.swift */,
+				2D9512292B97EA7D00D5F6B5 /* PaymentKotlin.swift */,
+				2D95122B2B97EA9100D5F6B5 /* PaymentJava.swift */,
+				2D95122D2B97EAAF00D5F6B5 /* PaymentCSharp.swift */,
 			);
 			path = Payment;
 			sourceTree = "<group>";
@@ -292,6 +315,18 @@
 				2D215D962B97324900A0EBF1 /* Model.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		2D95122F2B97FEC100D5F6B5 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				2D9512302B97FEDC00D5F6B5 /* PythonTest.swift */,
+				2D9512322B97FF8400D5F6B5 /* SwiftTest.swift */,
+				2D9512342B97FFA100D5F6B5 /* KotlinTest.swift */,
+				2D9512362B97FFBE00D5F6B5 /* JavaTest.swift */,
+				2D9512382B97FFD500D5F6B5 /* CSharpTest.swift */,
+			);
+			path = Test;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -368,12 +403,17 @@
 				2D215D742B95DAC600A0EBF1 /* TestView.swift in Sources */,
 				2D215D4D2B95D12C00A0EBF1 /* ContentView.swift in Sources */,
 				2D215D892B96503B00A0EBF1 /* KotlinView.swift in Sources */,
+				2D9512352B97FFA100D5F6B5 /* KotlinTest.swift in Sources */,
+				2D9512372B97FFBF00D5F6B5 /* JavaTest.swift in Sources */,
 				2D215D6E2B95D9B200A0EBF1 /* CommunicationView.swift in Sources */,
 				2D215D602B95D58500A0EBF1 /* TabBarIcon.swift in Sources */,
+				2D95122C2B97EA9100D5F6B5 /* PaymentJava.swift in Sources */,
 				2D215DA02B9757B200A0EBF1 /* SwiftCourse.swift in Sources */,
 				2D215D9C2B974C0800A0EBF1 /* JavaCourse.swift in Sources */,
+				2D9512312B97FEDC00D5F6B5 /* PythonTest.swift in Sources */,
 				2D215D672B95D72000A0EBF1 /* TabBarCustomShape.swift in Sources */,
 				2D215D8B2B96505B00A0EBF1 /* JavaView.swift in Sources */,
+				2D9512332B97FF8400D5F6B5 /* SwiftTest.swift in Sources */,
 				2D215D4B2B95D12C00A0EBF1 /* CoursesApp.swift in Sources */,
 				2D215D7E2B960E6500A0EBF1 /* CoursItemView.swift in Sources */,
 				2D215DA22B9757C800A0EBF1 /* PythonCourse.swift in Sources */,
@@ -383,13 +423,17 @@
 				2D215D592B95D3C700A0EBF1 /* TabBar.swift in Sources */,
 				2D215D8D2B96507200A0EBF1 /* CSharpView.swift in Sources */,
 				2D215D632B95D62A00A0EBF1 /* Color  + ext.swift in Sources */,
+				2D9512392B97FFD500D5F6B5 /* CSharpTest.swift in Sources */,
 				2D215D6B2B95D90400A0EBF1 /* CourseListView.swift in Sources */,
+				2D9512282B97EA6D00D5F6B5 /* PaymentSwift.swift in Sources */,
+				2D95122A2B97EA7D00D5F6B5 /* PaymentKotlin.swift in Sources */,
 				2D215D9A2B9737AA00A0EBF1 /* CSharpCourse.swift in Sources */,
 				2D215D7C2B960A0200A0EBF1 /* SearchBarView.swift in Sources */,
 				2D215D712B95DA6600A0EBF1 /* AchievementsView.swift in Sources */,
 				2D215D5D2B95D4D800A0EBF1 /* ViewRouter.swift in Sources */,
 				2D215D972B97324900A0EBF1 /* Model.swift in Sources */,
 				2D215D872B96502700A0EBF1 /* SwiftView.swift in Sources */,
+				2D95122E2B97EAAF00D5F6B5 /* PaymentCSharp.swift in Sources */,
 				2D215D772B95E7ED00A0EBF1 /* VideoPlayerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -530,8 +574,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -559,8 +603,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

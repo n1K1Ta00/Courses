@@ -27,14 +27,19 @@ struct CourseListView: View {
     }
     
     @State private var selectedCourseType: CourseType?
-    @ObservedObject var payment = PaymentModel()
-    @ObservedObject var title = TittleModel()
+    @State private var search = ""
+    @ObservedObject var payment = Model()
     
     var body: some View {
         NavigationView {
             ScrollView {
                 LazyVStack {
-                    ForEach(courses) { course in
+                    SearchBarView(searchText: $search)
+                        .padding()
+                    
+                    ForEach(courses.filter {
+                        search.isEmpty || $0.title.localizedCaseInsensitiveContains(search)
+                    })  { course in
                         NavigationLink(
                             destination: getViewForCourse(course.type),
                             tag: course.type,
@@ -42,44 +47,39 @@ struct CourseListView: View {
                         ) {
                             CoursItemView(title: course.title, imageURL: course.imageURL, amount: course.amount, footerText: course.footerText)
                         }
-                        .buttonStyle(PlainButtonStyle())
                     }
                 }
             }
+            .padding(.bottom, 50)
         }
     }
     
     func getViewForCourse(_ courseType: CourseType) -> some View {
         switch courseType {
         case .python:
-            if payment.python == true {
+            if payment.pythonPayment == true {
                 return AnyView(PythonCourse())
             }
-            title.python = true
             return AnyView(PythonView())
         case .swift:
-            if payment.swift == true {
+            if payment.swiftPayment == true {
                 return AnyView(SwiftCourse())
             }
-            title.swift = true
             return AnyView(SwiftView())
         case .kotlin:
-            if payment.kotlin == true {
+            if payment.kotlinPayment == true {
                 return AnyView(KotlinCourse())
             }
-            title.kotlin = true
             return AnyView(KotlinView())
         case .java:
-            if payment.java {
+            if payment.javaPayment {
                 return AnyView(JavaCourse())
             }
-            title.java = true
             return AnyView(JavaView())
         case .cSharp:
-            if payment.csharp == true {
+            if payment.csharpPayment == true {
                 return AnyView(CSharpCourse())
             }
-            title.csharp = true
             return AnyView(CSharpView())
         }
     }
@@ -102,8 +102,7 @@ struct CourseListView: View {
     ]
 }
 
-struct CourseListView_Previews: PreviewProvider {
-    static var previews: some View {
-        CourseListView()
-    }
+
+#Preview {
+    CourseListView()
 }

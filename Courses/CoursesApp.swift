@@ -14,6 +14,7 @@ struct CoursesApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView(viewRouter: viewRouter)
+                .preferredColorScheme(.light)
         }
     }
 }

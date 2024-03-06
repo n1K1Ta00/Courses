@@ -71,10 +71,8 @@ var screen: CGSize {
     )
 }
 
-struct CoursItemView_Previews: PreviewProvider {
-    static var previews: some View {
+#Preview {
         NavigationView {
             CoursItemView(title: "Pyhton", imageURL: "https://i.imgur.com/eoUVtjn.png", amount: 500, footerText: "IT Progger")
         }
     }
-}

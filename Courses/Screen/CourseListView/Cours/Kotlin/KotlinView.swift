@@ -13,8 +13,6 @@ struct KotlinView: View {
     @State private var validYouTubeURL = false
     @State private var showingPayment = false
     
-    @ObservedObject var dataModel = TittleModel()
-    
     var body: some View {
         NavigationStack {
             ScrollView {
@@ -56,7 +54,6 @@ struct KotlinView: View {
                         
                         Button(action: {
                             showingPayment = true
-                            dataModel.kotlin = true
                         }) {
                             Text("Приобрести курс")
                                 .foregroundColor(.white)

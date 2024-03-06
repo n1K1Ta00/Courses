@@ -12,8 +12,6 @@ struct JavaView: View {
     @State private var youTubeVideoID: String = ""
     @State private var validYouTubeURL = false
     @State private var showingPayment = false
-    
-    @ObservedObject var dataModel = TittleModel()
 
     var body: some View {
         NavigationStack {
@@ -56,7 +54,6 @@ struct JavaView: View {
                         
                         Button(action: {
                             showingPayment = true
-                            dataModel.java = true
                         }) {
                             Text("Приобрести курс")
                                 .foregroundColor(.white)

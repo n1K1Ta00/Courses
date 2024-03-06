@@ -13,8 +13,6 @@ struct CSharpView: View {
     @State private var validYouTubeURL = false
     @State private var showingPayment = false
     
-    @ObservedObject var dataModel = TittleModel()
-    
     var body: some View {
         NavigationStack {
             ScrollView {
@@ -56,7 +54,6 @@ struct CSharpView: View {
                         
                         Button(action: {
                             showingPayment = true
-                            dataModel.csharp = true
                         }) {
                             Text("Приобрести курс")
                                 .foregroundColor(.white)
@@ -74,7 +71,8 @@ struct CSharpView: View {
                     }
                     
                     Spacer()
-                }.onAppear {
+                }
+                .onAppear {
                     if let videoID = self.youTubeURL.extractYoutubeID() {
                         self.youTubeURL = ""
                         self.youTubeVideoID = videoID
