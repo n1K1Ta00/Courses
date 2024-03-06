@@ -101,6 +101,7 @@ struct JavaTest: View {
         }
         if correctAnswers == 10 {
             model.javaComplete = true
+            model.saveToUserDefaults()
         }
     }
 }

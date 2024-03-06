@@ -10,27 +10,19 @@ import SwiftUI
 struct Achievements {
     var title: String
     var condition: String
+    var reward: String
     var isComplete: Bool
-    
-    init() {
-           self.title = "Первое достижение"
-           self.condition = "Купить 1 курс"
-           self.isComplete = false
-       }
    }
 
 struct AchievementsView: View {
-    @State private var sliderValue: Double = 1.0
+    @State private var sliderValue: Double = 0.0
     @State private var disabledSlider = false
+    @ObservedObject var model = Model()
     
-    @State private var complete1 = false
-    @State private var complete2 = false
-    @State private var complete3 = false
-    
-    var achievements: [Achievements] = [
-           Achievements(),
-           Achievements(title: "Второе достижение", condition: "Набрать 10 очков в любом тесте", isComplete: false),
-           Achievements(title: "Третье достижение", condition: "Напишите отзыв", isComplete: false)
+     @State private var achievements: [Achievements] = [
+        Achievements(title: "Ученик", condition: "Купить 1 курс", reward: "Скидка на курс 20%", isComplete: true),
+        Achievements(title: "Знаток", condition: "Набрать 10 очков в любом тесте", reward: "", isComplete: true),
+        Achievements(title: "Поклонник", condition: "Напишите отзыв", reward: "", isComplete: true)
        ]
     
     var body: some View {
@@ -38,7 +30,7 @@ struct AchievementsView: View {
             Text("Достижения")
                 .font(.title)
             
-        List(achievements, id: \.title) { achievement in
+            List($achievements, id: \.title) { $achievement in
             HStack {
                 Image("achivments")
                     .resizable()
@@ -50,15 +42,22 @@ struct AchievementsView: View {
                         .font(.headline)
                     Text("Условие: \(achievement.condition)")
                         .font(.subheadline)
+                    Text("Награда: \(achievement.reward)")
+                        .font(.headline)
                     Slider(value: $sliderValue, in: 0.0...1.0, step: 1.0)
                         .disabled(!disabledSlider)
                         .accentColor(achievement.isComplete ? .gray : .green)
                 }
             }
+            .onTapGesture {
+                achievement.isComplete.toggle()
+            }
             }
         }
     }
 }
+
+
 
 #Preview {
     AchievementsView()

@@ -107,6 +107,7 @@ struct PythonTest: View {
         
         if correctAnswers == 10 {
             model.pythonComplete = true
+            model.saveToUserDefaults()
         }
     }
 }

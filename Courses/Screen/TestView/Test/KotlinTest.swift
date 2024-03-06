@@ -101,6 +101,7 @@ struct KotlinTest: View {
         }
         if correctAnswers == 10 {
             model.kotlinComplete = true
+            model.saveToUserDefaults()
         }
     }
 }

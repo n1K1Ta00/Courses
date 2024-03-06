@@ -86,7 +86,7 @@ struct KotlinView: View {
             .navigationTitle("Kotlin")
             .navigationBarTitleDisplayMode(.inline)
             .sheet(isPresented: $showingPayment) {
-                PaymentPython()
+                PaymentKotlin()
             }
         }
     }

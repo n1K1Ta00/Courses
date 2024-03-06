@@ -100,6 +100,7 @@ struct SwiftTest: View {
         }
         if correctAnswers == 10 {
             model.swiftComplete = true
+            model.saveToUserDefaults()
         }
     }
 }

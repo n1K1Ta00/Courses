@@ -86,7 +86,7 @@ struct JavaView: View {
             .navigationTitle("Java")
             .navigationBarTitleDisplayMode(.inline)
             .sheet(isPresented: $showingPayment) {
-                PaymentPython()
+                PaymentJava()
             }
         }
     }

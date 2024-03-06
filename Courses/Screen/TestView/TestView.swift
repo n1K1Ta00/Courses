@@ -100,7 +100,7 @@ struct TestView: View {
                         .scaledToFit()
                         .frame(width: 100, height: 100)
                     
-                    if model.pythonPayment == false {
+                    if model.csharpPayment == false {
                         Text("НЕТ ДОСТУПА")
                             .foregroundStyle(.gray)
                     }

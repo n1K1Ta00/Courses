@@ -21,14 +21,14 @@ struct PaymentSwift: View {
         return !cardNumber.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty &&
         !cardName.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty &&
         !expiryDate.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty &&
-        !cvv.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty && (cardNumber.count == 16) && (expiryDate.count == 5) && (cvv.count == 3)
+        !cvv.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty && (cardNumber.count == 16) && (expiryDate.count == 4) && (cvv.count == 3)
     }
     
     
     
     var body: some View {
         VStack {
-            TextField("Номер карты", text: $cardNumber)
+            TextField("Номер карты (16 цифр)", text: $cardNumber)
                 .padding()
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .keyboardType(.numberPad)
@@ -39,7 +39,7 @@ struct PaymentSwift: View {
             
             
             HStack {
-                TextField("MM/YY", text: $expiryDate)
+                TextField("MM YY", text: $expiryDate)
                     .padding()
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .keyboardType(.numberPad)

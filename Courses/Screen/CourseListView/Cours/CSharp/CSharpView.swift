@@ -87,7 +87,7 @@ struct CSharpView: View {
             .navigationTitle("CSharp")
             .navigationBarTitleDisplayMode(.inline)
             .sheet(isPresented: $showingPayment) {
-                PaymentPython()
+                PaymentCSharp()
             }
         }
     }

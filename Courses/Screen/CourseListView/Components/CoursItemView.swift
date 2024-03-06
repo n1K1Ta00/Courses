@@ -10,7 +10,7 @@ import SwiftUI
 struct CoursItemView: View {
     let title: String
     let imageURL: String
-    let amount: Double
+    let amount: String
     let footerText: String
     
     var body: some View {
@@ -41,7 +41,7 @@ struct CoursItemView: View {
     var overlayCard: some View {
         HStack {
             HStack(spacing: 0) {
-                Text(amount, format: .currency(code: "BYN"))
+                Text(amount)
                     .foregroundColor(Color.Text.white)
             }
             .padding(.all, 2)
@@ -73,6 +73,6 @@ var screen: CGSize {
 
 #Preview {
         NavigationView {
-            CoursItemView(title: "Pyhton", imageURL: "https://i.imgur.com/eoUVtjn.png", amount: 500, footerText: "IT Progger")
+            CoursItemView(title: "Pyhton", imageURL: "https://i.imgur.com/eoUVtjn.png", amount: "500 Br", footerText: "IT Progger")
         }
     }

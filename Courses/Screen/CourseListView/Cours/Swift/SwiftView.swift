@@ -86,7 +86,7 @@ struct SwiftView: View {
             .navigationTitle("Swift")
             .navigationBarTitleDisplayMode(.inline)
             .sheet(isPresented: $showingPayment) {
-                PaymentPython()
+                PaymentSwift()
             }
         }
     }

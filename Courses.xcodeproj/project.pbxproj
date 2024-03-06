@@ -45,6 +45,8 @@
 		2D9512352B97FFA100D5F6B5 /* KotlinTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9512342B97FFA100D5F6B5 /* KotlinTest.swift */; };
 		2D9512372B97FFBF00D5F6B5 /* JavaTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9512362B97FFBE00D5F6B5 /* JavaTest.swift */; };
 		2D9512392B97FFD500D5F6B5 /* CSharpTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9512382B97FFD500D5F6B5 /* CSharpTest.swift */; };
+		2D9512412B98B2E000D5F6B5 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9512402B98B2E000D5F6B5 /* RatingView.swift */; };
+		2D9512432B98B5F100D5F6B5 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9512422B98B5F100D5F6B5 /* AddView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -87,6 +89,8 @@
 		2D9512342B97FFA100D5F6B5 /* KotlinTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KotlinTest.swift; sourceTree = "<group>"; };
 		2D9512362B97FFBE00D5F6B5 /* JavaTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JavaTest.swift; sourceTree = "<group>"; };
 		2D9512382B97FFD500D5F6B5 /* CSharpTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSharpTest.swift; sourceTree = "<group>"; };
+		2D9512402B98B2E000D5F6B5 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
+		2D9512422B98B5F100D5F6B5 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +204,7 @@
 			isa = PBXGroup;
 			children = (
 				2D215D6D2B95D9B200A0EBF1 /* CommunicationView.swift */,
+				2D95123F2B988EA700D5F6B5 /* CommuniactionComponents */,
 			);
 			path = CommunicationView;
 			sourceTree = "<group>";
@@ -329,6 +334,15 @@
 			path = Test;
 			sourceTree = "<group>";
 		};
+		2D95123F2B988EA700D5F6B5 /* CommuniactionComponents */ = {
+			isa = PBXGroup;
+			children = (
+				2D9512402B98B2E000D5F6B5 /* RatingView.swift */,
+				2D9512422B98B5F100D5F6B5 /* AddView.swift */,
+			);
+			path = CommuniactionComponents;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -409,6 +423,7 @@
 				2D215D602B95D58500A0EBF1 /* TabBarIcon.swift in Sources */,
 				2D95122C2B97EA9100D5F6B5 /* PaymentJava.swift in Sources */,
 				2D215DA02B9757B200A0EBF1 /* SwiftCourse.swift in Sources */,
+				2D9512432B98B5F100D5F6B5 /* AddView.swift in Sources */,
 				2D215D9C2B974C0800A0EBF1 /* JavaCourse.swift in Sources */,
 				2D9512312B97FEDC00D5F6B5 /* PythonTest.swift in Sources */,
 				2D215D672B95D72000A0EBF1 /* TabBarCustomShape.swift in Sources */,
@@ -434,6 +449,7 @@
 				2D215D972B97324900A0EBF1 /* Model.swift in Sources */,
 				2D215D872B96502700A0EBF1 /* SwiftView.swift in Sources */,
 				2D95122E2B97EAAF00D5F6B5 /* PaymentCSharp.swift in Sources */,
+				2D9512412B98B2E000D5F6B5 /* RatingView.swift in Sources */,
 				2D215D772B95E7ED00A0EBF1 /* VideoPlayerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
