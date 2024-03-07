@@ -63,8 +63,7 @@ struct PaymentCSharp: View {
                 .keyboardType(.numberPad)
             
             Text(checkPromo ? "К оплате: 400 BYN(скидка 20%)" : "К оплате: 500 BYN")
-            
-            Text("К оплате: 500 BYN")
+        
             
             Button(action: {
                 showingAlert = true
