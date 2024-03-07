@@ -14,7 +14,6 @@
 		2D215D592B95D3C700A0EBF1 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D215D582B95D3C700A0EBF1 /* TabBar.swift */; };
 		2D215D5D2B95D4D800A0EBF1 /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D215D5C2B95D4D800A0EBF1 /* ViewRouter.swift */; };
 		2D215D602B95D58500A0EBF1 /* TabBarIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D215D5F2B95D58500A0EBF1 /* TabBarIcon.swift */; };
-		2D215D632B95D62A00A0EBF1 /* Color  + ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D215D622B95D62A00A0EBF1 /* Color  + ext.swift */; };
 		2D215D672B95D72000A0EBF1 /* TabBarCustomShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D215D662B95D72000A0EBF1 /* TabBarCustomShape.swift */; };
 		2D215D6B2B95D90400A0EBF1 /* CourseListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D215D6A2B95D90400A0EBF1 /* CourseListView.swift */; };
 		2D215D6E2B95D9B200A0EBF1 /* CommunicationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D215D6D2B95D9B200A0EBF1 /* CommunicationView.swift */; };
@@ -58,7 +57,6 @@
 		2D215D582B95D3C700A0EBF1 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		2D215D5C2B95D4D800A0EBF1 /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
 		2D215D5F2B95D58500A0EBF1 /* TabBarIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarIcon.swift; sourceTree = "<group>"; };
-		2D215D622B95D62A00A0EBF1 /* Color  + ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color  + ext.swift"; sourceTree = "<group>"; };
 		2D215D662B95D72000A0EBF1 /* TabBarCustomShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCustomShape.swift; sourceTree = "<group>"; };
 		2D215D6A2B95D90400A0EBF1 /* CourseListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseListView.swift; sourceTree = "<group>"; };
 		2D215D6D2B95D9B200A0EBF1 /* CommunicationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunicationView.swift; sourceTree = "<group>"; };
@@ -126,7 +124,6 @@
 				2D215D4A2B95D12C00A0EBF1 /* CoursesApp.swift */,
 				2D215D752B95E7B800A0EBF1 /* Services */,
 				2D215D982B9732F600A0EBF1 /* Model */,
-				2D215D612B95D5D000A0EBF1 /* Extensions */,
 				2D215D682B95D76300A0EBF1 /* Screen */,
 				2D215D502B95D12F00A0EBF1 /* Preview Content */,
 			);
@@ -166,14 +163,6 @@
 				2D215D662B95D72000A0EBF1 /* TabBarCustomShape.swift */,
 			);
 			name = Components;
-			sourceTree = "<group>";
-		};
-		2D215D612B95D5D000A0EBF1 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				2D215D622B95D62A00A0EBF1 /* Color  + ext.swift */,
-			);
-			path = Extensions;
 			sourceTree = "<group>";
 		};
 		2D215D682B95D76300A0EBF1 /* Screen */ = {
@@ -437,7 +426,6 @@
 				2D215D9E2B97579600A0EBF1 /* KotlinCourse.swift in Sources */,
 				2D215D592B95D3C700A0EBF1 /* TabBar.swift in Sources */,
 				2D215D8D2B96507200A0EBF1 /* CSharpView.swift in Sources */,
-				2D215D632B95D62A00A0EBF1 /* Color  + ext.swift in Sources */,
 				2D9512392B97FFD500D5F6B5 /* CSharpTest.swift in Sources */,
 				2D215D6B2B95D90400A0EBF1 /* CourseListView.swift in Sources */,
 				2D9512282B97EA6D00D5F6B5 /* PaymentSwift.swift in Sources */,

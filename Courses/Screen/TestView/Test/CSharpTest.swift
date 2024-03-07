@@ -101,7 +101,7 @@ struct CSharpTest: View {
         }
         
         if correctAnswers == 10 {
-            model.csharpComplete = true
+            model.rewards2 = true
             model.saveToUserDefaults()
         }
     }

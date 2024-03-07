@@ -42,7 +42,7 @@ struct CoursItemView: View {
         HStack {
             HStack(spacing: 0) {
                 Text(amount)
-                    .foregroundColor(Color.Text.white)
+                    .foregroundColor(Color.white)
             }
             .padding(.all, 2)
             .padding(.horizontal, 4)
@@ -56,7 +56,7 @@ struct CoursItemView: View {
         HStack {
             Text(footerText)
                 .padding(.leading, 6)
-                .foregroundColor(Color.Text.gray)
+                .foregroundColor(Color.gray)
                 .frame(width: screen.width - 40, height: 20 * 2.4, alignment: .leading)
                 .background(.clear)
                 .cornerRadius(10)

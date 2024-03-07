@@ -100,7 +100,7 @@ struct JavaTest: View {
             showAlert = true
         }
         if correctAnswers == 10 {
-            model.javaComplete = true
+            model.rewards2 = true
             model.saveToUserDefaults()
         }
     }

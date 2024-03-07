@@ -12,10 +12,17 @@ struct PaymentCSharp: View {
     @State private var cardName = ""
     @State private var expiryDate = ""
     @State private var cvv = ""
+    @State private var promo = ""
     
     @State private var showingAlert = false
     
     @ObservedObject var payment = Model()
+    
+    @Environment(\.presentationMode) var presentationMode
+    
+    var checkPromo: Bool {
+        return promo == "0606"
+    }
     
     var isFormValid: Bool {
         return !cardNumber.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty &&
@@ -50,6 +57,13 @@ struct PaymentCSharp: View {
                     .keyboardType(.numberPad)
             }
             
+            TextField("Промокод(необязательно)", text: $promo)
+                .padding()
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+                .keyboardType(.numberPad)
+            
+            Text(checkPromo ? "К оплате: 400 BYN(скидка 20%)" : "К оплате: 500 BYN")
+            
             Text("К оплате: 500 BYN")
             
             Button(action: {
@@ -66,14 +80,12 @@ struct PaymentCSharp: View {
             .disabled(!isFormValid)
         }
         .padding()
-        .alert("""
-               
-               Оплата курса прошла успешно
-               Перезайдите в приложение чтобы начать проходить данный курс
-               
-               """, isPresented: $showingAlert) {
+        .alert("Оплата курса прошла успешно"
+            , isPresented: $showingAlert) {
             Button("OK") {
+                presentationMode.wrappedValue.dismiss()
                 payment.csharpPayment = true
+                payment.rewards1 = true
                 payment.saveToUserDefaults()
             }
         }

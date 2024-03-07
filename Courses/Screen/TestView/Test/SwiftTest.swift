@@ -99,7 +99,7 @@ struct SwiftTest: View {
             showAlert = true
         }
         if correctAnswers == 10 {
-            model.swiftComplete = true
+            model.rewards2 = true
             model.saveToUserDefaults()
         }
     }

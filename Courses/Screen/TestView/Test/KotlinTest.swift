@@ -100,7 +100,7 @@ struct KotlinTest: View {
             showAlert = true
         }
         if correctAnswers == 10 {
-            model.kotlinComplete = true
+            model.rewards2 = true
             model.saveToUserDefaults()
         }
     }
